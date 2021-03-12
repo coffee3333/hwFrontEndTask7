@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-manager">
+			<img src="assets/img/logo.png" alt="" class="nav-manager__logo">
+		</div>
+		<div class="main-content-wrapper">
+			<div class="main-header-wrapper">
+				<div class="main-header-title-box">
+					<h1 class="main-title">heimdal</h1>
+					<p class="main-title-description">Ethereum Blockchain Explorer</p>
+				</div>
+				<div class="main-header__coins-wrapper" id = "marketPrice">
+				</div>
+			</div>
+			<div class="main-content__search-wrapper">
+				<div class="main-content__search-field">
+					<input type="search" id="address-search" name="q"aria-label="Search by address" class="main-content__search">
+					<button class="main-content__search-btn" onclick="getAddressInfo()">Explore</button>
+				</div>
+			</div>
+			<div class="main-content__main-data" id = "mainInfo">
+				<div class="main-content__first-data" id = "first-data"></div>				
+				<div class="main-content__second-data" id = "second-data"></div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
